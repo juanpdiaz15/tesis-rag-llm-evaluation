@@ -60,10 +60,36 @@ The dataset consists of:
 - Docker Compose
 
 2. Install Docker and Docker Compose
-
+First, connect to your VPS via SSH. Next, install Docker and Docker Compose. The official convenience script is the easiest way to get the latest Docker version. Verify both installations with docker --version and docker compose version.
 ```bash
-sudo apt update
-sudo apt install docker.io docker-compose -y
-sudo systemctl enable docker
-sudo systemctl start docker
+sudo apt update && sudo apt upgrade -y
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo apt install docker-compose-v2 -y
 ```
+
+3. Create the n8n Configuration
+Organize your setup by creating a dedicated directory for n8n.
+```bash
+mkdir ~/n8n && cd ~/n8n
+```
+Inside this directory, create two files: docker-compose.yml for the service definition and .env for your secret credentials.
+
+Create the docker-compose.yml file:
+```bash
+nano docker-compose.yml
+```
+Paste or upload the docker-compose.yml file
+
+Now, create the .env file to securely store your database credentials.
+```bash
+nano .env
+```
+Paste or upload the .env-example file
+
+4. Start n8n
+With the configuration in place, you can install n8n and start the services with a single command.
+```bash
+docker compose up -d
+```
+This command downloads the required Docker images and starts the containers in the background. You can check the status with docker compose ps. At this point, n8n is running and ready to be secured for production use. It's a good idea to check the logs once (docker compose logs -f n8n) to ensure there were no errors during startup.
