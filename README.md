@@ -2,7 +2,7 @@
 
 This project implements an automated evaluation pipeline for Large Language Models (LLMs) using:
 
--Retrieval-Augmented Generation (RAG)
+- Retrieval-Augmented Generation (RAG)
 
 Vector database (Qdrant)
 
