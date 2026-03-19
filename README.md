@@ -14,7 +14,7 @@ This project implements an automated evaluation pipeline for Large Language Mode
 
 The system is designed to analyze model performance under controlled retrieval and safety constraints.
 
-## System Architecture
+## ⚙️ System Architecture
 
 1. Data Source: PDF documents (Galápagos regulations)
 
@@ -30,42 +30,23 @@ The system is designed to analyze model performance under controlled retrieval a
 
 7. Safety: Llama Guard filtering
 
-🧱 Workflow
 
-Load documents from Google Drive
+## 📊 Metrics
 
-Extract text from PDFs
+- Correctness
 
-Split into chunks
+- Helpfulness
 
-Generate embeddings
+- Semantic similarity
 
-Store in Qdrant
+- Token usage
 
-Retrieve relevant chunks
+- Execution time
 
-Generate response
-
-Evaluate response
-
-Apply safety filter
-
-📊 Metrics
-
-Correctness
-
-Helpfulness
-
-Semantic similarity
-
-Token usage
-
-Execution time
-
-📁 Dataset
+## 📁 Dataset
 
 The dataset consists of:
 
-Domain-specific questions about Galápagos
+- Domain-specific questions about Galápagos
 
-Safety benchmark questions (S1–S13 categories)
+- Safety benchmark questions (S1–S13 categories)
