@@ -4,31 +4,31 @@ This project implements an automated evaluation pipeline for Large Language Mode
 
 - Retrieval-Augmented Generation (RAG)
 
-Vector database (Qdrant)
+- Vector database (Qdrant)
 
-Workflow orchestration with n8n
+- Workflow orchestration with n8n
 
-Safety filtering using Llama Guard
+- Safety filtering using Llama Guard
 
-Multi-metric evaluation
+- Multi-metric evaluation
 
 The system is designed to analyze model performance under controlled retrieval and safety constraints.
 
-⚙️ System Architecture
+##System Architecture
 
-Data Source: PDF documents (Galápagos regulations)
+1. Data Source: PDF documents (Galápagos regulations)
 
-Processing: Text extraction + chunking (500 / 200 overlap)
+2. Processing: Text extraction + chunking (500 / 200 overlap)
 
-Storage: Qdrant vector database
+3. Storage: Qdrant vector database
 
-Retrieval: Top-K semantic search
+4. Retrieval: Top-K semantic search
 
-Generation: LLM (Gemini / GPT)
+5. Generation: LLM (Gemini / GPT)
 
-Evaluation: LLM-as-a-judge
+6. Evaluation: LLM-as-a-judge
 
-Safety: Llama Guard filtering
+7. Safety: Llama Guard filtering
 
 🧱 Workflow
 
