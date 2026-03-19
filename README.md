@@ -142,3 +142,12 @@ sudo apt install certbot python3-certbot-nginx -y
 sudo certbot --nginx -d n8n.yourdomain.com
 ```
 Follow the prompts, making sure to select the option to redirect all HTTP traffic to your n8n HTTPS. Once finished, Certbot will automatically handle certificate renewals. You can now access your secure n8n instance at https://n8n.yourdomain.com.
+
+## Citation
+```bash
+@thesis{diaz2025rag,
+  title={Comparative Evaluation of Vulnerabilities in LLMs},
+  author={Diaz Castillo, Juan Pablo},
+  year={2025}
+}
+```
