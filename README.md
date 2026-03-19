@@ -50,3 +50,20 @@ The dataset consists of:
 - Domain-specific questions about Galápagos
 
 - Safety benchmark questions (S1–S13 categories)
+
+## Deployment Guide (VPS + Docker)
+
+1. Requisitos
+
+- VPS (Ubuntu 20.04+ recomendado)
+- Docker
+- Docker Compose
+
+2. Install Docker and Docker Compose
+
+```bash
+sudo apt update
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable docker
+sudo systemctl start docker
+```
