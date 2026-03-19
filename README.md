@@ -1,4 +1,4 @@
-# tesis-chatbot
+# Tesis-rag-llm-evaluation
 
 This project implements an automated evaluation pipeline for Large Language Models (LLMs) using:
 
