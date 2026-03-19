@@ -14,7 +14,7 @@ This project implements an automated evaluation pipeline for Large Language Mode
 
 The system is designed to analyze model performance under controlled retrieval and safety constraints.
 
-##System Architecture
+## System Architecture
 
 1. Data Source: PDF documents (Galápagos regulations)
 
