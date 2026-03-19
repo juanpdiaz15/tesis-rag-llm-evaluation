@@ -60,6 +60,7 @@ The dataset consists of:
 - Docker Compose
 
 2. Install Docker and Docker Compose
+
 First, connect to your VPS via SSH. Next, install Docker and Docker Compose. The official convenience script is the easiest way to get the latest Docker version. Verify both installations with docker --version and docker compose version.
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -69,6 +70,7 @@ sudo apt install docker-compose-v2 -y
 ```
 
 3. Create the n8n Configuration
+   
 Organize your setup by creating a dedicated directory for n8n.
 ```bash
 mkdir ~/n8n && cd ~/n8n
@@ -88,6 +90,7 @@ nano .env
 Paste or upload the .env-example file
 
 4. Start n8n
+   
 With the configuration in place, you can install n8n and start the services with a single command.
 ```bash
 docker compose up -d
