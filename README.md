@@ -107,6 +107,10 @@ docker compose up -d
 ```
    This command downloads the required Docker images and starts the containers in the background. You can check the status with docker compose ps. At this point, n8n is running and ready to be secured for production use. It's a good idea to check the logs once (docker compose logs -f n8n) to ensure there were no errors during startup.
 
+5. Upload workflows
+
+   Once inside N8N, you’ll be prompted to create credentials so you can log in each time you access the platform. After that, we can create a new workflow, and within it, we can upload the file containing the flow (with-guard.json or w_o_guard.json). Once uploaded, you’ll be able to see how the entire flow works, but for it to be functional, you’ll need to enter the corresponding credentials. 
+
 ## Securing Your n8n Instance
 1.  Install and Configure NGINX
 
