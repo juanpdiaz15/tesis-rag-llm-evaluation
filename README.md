@@ -63,9 +63,9 @@ The dataset consists of:
 
 ## Deployment Guide (VPS + Docker)
 
-1. Requisitos
+1. Requierements
 
-- VPS (Ubuntu 20.04+ recomendado)
+- VPS (Ubuntu 20.04+ recomended)
 - Docker
 - Docker Compose
 
