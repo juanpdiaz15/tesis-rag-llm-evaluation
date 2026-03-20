@@ -30,6 +30,16 @@ The system is designed to analyze model performance under controlled retrieval a
 
 7. Safety: Llama Guard filtering
 
+## 🤖 Model Access
+
+All models used in this project are accessed via external APIs and are not hosted locally. The system integrates with:
+
+- OpenAI (GPT models)
+- Google Cloud (Gemini models)
+- Groq (inference for open-source models)
+
+All API calls are handled internally within the n8n workflows. To run the project, each user must configure their own API keys inside n8n. This approach allows easy model swapping and avoids the need for local model deployment.
+
 
 ## 📊 Metrics
 
